@@ -1,0 +1,58 @@
+"use ubuntu nautilus to open current dir
+map <F7> :!nautilus .<CR>
+"for deleting all
+nmap <C-d> ggdG
+
+"map <ESC>
+vmap <C-w> <ESC>
+cmap <C-m> <ESC>
+imap <C-w> <ESC>
+
+"tab navigation
+map <leader>wq :wq<CR>
+map <leader>w :w<CR>
+map <leader>fq :q!<CR>
+map <leader>fqa :qa!<CR>
+map <leader>q :q<CR>
+map <leader>qa :qa<CR>
+map <C-i> :tabp<CR>
+colorscheme railscasts@7li
+
+"command history map
+cmap <C-p> <up>
+cmap <C-n> <down>
+cmap <C-f> <right>
+cmap <C-b> <left>
+nmap <C-n> :
+
+"copy and paste
+nmap <C-V> "+p
+imap <C-V> <ESC><C-V>
+vmap <C-C> "+y
+
+"map ctrl-s saving file
+imap <C-S> <ESC>:w<CR>
+nmap <C-s> :w<CR>
+
+"===========================================================================
+"============= The following config is for plugins  ========================
+"===========================================================================
+
+"Nerdtree plugin
+map <F1> :NERDTreeToggle<CR>
+let NERDTreeMouseMode=2
+let NERDTreeAutoCenter=1
+let NERDTreeWinSize=25
+let NERDTreeMinimalUI = 1
+
+
+"the conque term plugin
+map <F6> :ConqueTerm bash<CR>
+
+"the rails plugin
+map <leader>m :Rmodel 
+map <leader>c :Rcontroller 
+map <leader>v :Rview 
+
+"ctrlp plugin
+let g:ctrlp_working_path_mode = 0 "let the working_path unchange

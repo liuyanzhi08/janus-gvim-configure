@@ -1,0 +1,19 @@
+set lines=35 columns=120
+set guifont=Ubuntu\ Mono\ 13
+
+"auto hide and show the toolbar
+"Toggle Menu and Toolbar
+set guioptions-=m
+set guioptions-=T
+map <silent> <F2> :if &guioptions =~# 'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
+
+"for mouse controll
+"be mswin
+"set mouse=a
+"map <2-LeftMouse> <LeftMouse>
