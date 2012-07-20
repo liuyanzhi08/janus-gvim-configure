@@ -1,5 +1,6 @@
 set lines=35 columns=120
 set guifont=Ubuntu\ Mono\ 13
+set laststatus=0
 
 "auto hide and show the toolbar
 "Toggle Menu and Toolbar

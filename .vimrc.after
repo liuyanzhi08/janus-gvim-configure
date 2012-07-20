@@ -5,15 +5,12 @@ map <leader>sp :sp<CR>
 "use ubuntu nautilus to open current dir
 map <F7> :!nautilus .<CR>
 
-"for select all
-nmap <C-d> ggVG
-
 "map <ESC>
 vmap <C-w> <ESC>
-cmap <C-m> <ESC>
 imap <C-w> <ESC>
 
 "tab navigation
+map <C-o> :tabnew<CR>
 map <leader>wq :wq<CR>
 map <leader>w :w<CR>
 map <leader>fq :q!<CR>
@@ -21,6 +18,8 @@ map <leader>fqa :qa!<CR>
 map <leader>q :q<CR>
 map <leader>qa :qa<CR>
 map <C-i> :tabp<CR>
+
+"colorscheme
 colorscheme railscasts@7li
 
 "command history map
@@ -29,6 +28,9 @@ cmap <C-n> <down>
 cmap <C-f> <right>
 cmap <C-b> <left>
 nmap <C-n> :
+
+"for select all
+map <C-a> ggVG
 
 "copy and paste
 nmap <C-V> "+p
@@ -52,7 +54,6 @@ let NERDTreeMouseMode=2
 let NERDTreeAutoCenter=1
 let NERDTreeWinSize=25
 let NERDTreeMinimalUI = 1
-
 
 "the conque term plugin
 map <F6> :ConqueTerm bash<CR>
