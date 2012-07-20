@@ -1,7 +1,12 @@
+"for split windows
+map <leader>vs :vs<CR>
+map <leader>sp :sp<CR>
+
 "use ubuntu nautilus to open current dir
 map <F7> :!nautilus .<CR>
-"for deleting all
-nmap <C-d> ggdG
+
+"for select all
+nmap <C-d> ggVG
 
 "map <ESC>
 vmap <C-w> <ESC>
@@ -29,6 +34,9 @@ nmap <C-n> :
 nmap <C-V> "+p
 imap <C-V> <ESC><C-V>
 vmap <C-C> "+y
+
+"cut text
+vmap <C-x> "+x
 
 "map ctrl-s saving file
 imap <C-S> <ESC>:w<CR>
